@@ -13,7 +13,8 @@ function CharactersList() {
     return <div>Error loading the data</div>;
   }
   if (loading) {
-    return <div>Loading data</div>;
+    return <div>Loading data. Please wait
+    </div>;
   }
 
   return (
