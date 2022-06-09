@@ -10,7 +10,7 @@ function CharactersList() {
 
   console.log({ error, loading, data });
   if (error) {
-    return <div>Error</div>;
+    return <div>Error loading the data</div>;
   }
   if (loading) {
     return <div>Loading data</div>;
@@ -22,7 +22,10 @@ function CharactersList() {
         return (
           <div key={eachCharacter.id}>
             <img src={eachCharacter.image} alt="img" />
-            <h2 className="char-name" onClick={() => navigate("/" + eachCharacter.id)}>
+            <h2
+              className="char-name"
+              onClick={() => navigate("/" + eachCharacter.id)}
+            >
               {eachCharacter.name}
             </h2>
           </div>
