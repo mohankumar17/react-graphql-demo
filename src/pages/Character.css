@@ -1,0 +1,16 @@
+.character {
+  display: flex;
+}
+
+.char-img {
+  width: 450px;
+  height: 500px;
+}
+
+.character-content {
+  margin-left: 2rem;
+}
+
+.character-episode {
+  margin-top: 1rem;
+}
